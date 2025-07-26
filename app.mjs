@@ -65,20 +65,31 @@ app.use((err, req, res, next) => {
 });
 
 async function call_ai(messageText) {
-  const token = "DTPPRFJZPPNZTDJUCBRRXNQ4BE3C3OX5";
-  const url = `https://api.wit.ai/message?v=20230726&q=${encodeURIComponent(
-    messageText
-  )}`;
+  const apiKey = "AIzaSyB_rdY1ituk6r7fqf3Bd8sQMxIVygDHOqI";
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+  const body = {
+    contents: [
+      {
+        parts: [
+          {
+            text: messageText,
+          },
+        ],
+      },
+    ],
+  };
 
   const res = await fetch(url, {
+    method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
+    body: JSON.stringify(body),
   });
 
   if (!res.ok) {
-    throw new Error(`Wit.ai API error: ${res.statusText}`);
+    throw new Error(`Gemini API error: ${res.statusText}`);
   }
 
   const data = await res.json();
