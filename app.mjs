@@ -63,6 +63,7 @@ app.use((err, req, res, next) => {
   }
   next(err);
 });
+
 async function call_ai(messageText) {
   const token = "DTPPRFJZPPNZTDJUCBRRXNQ4BE3C3OX5";
   const url = `https://api.wit.ai/message?v=20230726&q=${encodeURIComponent(

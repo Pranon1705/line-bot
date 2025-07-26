@@ -1,0 +1,204 @@
+[
+  {
+    "text": "Hello, My name is Pranon",
+    "intent": "provide_name",
+    "entities": [
+      {
+        "entity": "full_name",
+        "value": "Pranon Yodkham",
+        "start": 11,
+        "end": 26
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "I graduated from the Faculty of Engineering, Computer Engineering Department, at Naresuan University",
+    "intent": "provide_education",
+    "entities": [
+      {
+        "entity": "faculty",
+        "value": "Faculty of Engineering",
+        "start": 19,
+        "end": 41
+      },
+      {
+        "entity": "department",
+        "value": "Computer Engineering Department",
+        "start": 43,
+        "end": 74
+      },
+      {
+        "entity": "university",
+        "value": "Naresuan University",
+        "start": 79,
+        "end": 99
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "I specialize in web development and IT solutions",
+    "intent": "provide_specialization",
+    "entities": [
+      {
+        "entity": "specialization",
+        "value": "web development",
+        "start": 17,
+        "end": 32
+      },
+      {
+        "entity": "specialization",
+        "value": "IT solutions",
+        "start": 37,
+        "end": 49
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Frontend: React, JavaScript, HTML,CSS",
+    "intent": "provide_skill_frontend",
+    "entities": [
+      { "entity": "frontend_tech", "value": "React", "start": 10, "end": 15 },
+      {
+        "entity": "frontend_tech",
+        "value": "JavaScript",
+        "start": 17,
+        "end": 27
+      },
+      { "entity": "frontend_tech", "value": "HTML", "start": 29, "end": 33 },
+      { "entity": "frontend_tech", "value": "CSS", "start": 34, "end": 37 }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Backend: Node.js, Python",
+    "intent": "provide_skill_backend",
+    "entities": [
+      { "entity": "backend_tech", "value": "Node.js", "start": 9, "end": 16 },
+      { "entity": "backend_tech", "value": "Python", "start": 18, "end": 24 }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Database: MySQL, MongoDB, RDS (Relational Database Service)",
+    "intent": "provide_skill_database",
+    "entities": [
+      { "entity": "database_tech", "value": "MySQL", "start": 10, "end": 15 },
+      { "entity": "database_tech", "value": "MongoDB", "start": 17, "end": 24 },
+      { "entity": "database_tech", "value": "RDS", "start": 26, "end": 29 },
+      {
+        "entity": "database_tech",
+        "value": "Relational Database Service",
+        "start": 32,
+        "end": 60
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Cloud & Infrastructure: EC2 (Amazon Web Services)",
+    "intent": "provide_skill_cloud",
+    "entities": [
+      { "entity": "cloud_tech", "value": "EC2", "start": 27, "end": 30 },
+      {
+        "entity": "cloud_tech",
+        "value": "Amazon Web Services",
+        "start": 33,
+        "end": 54
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Automate Testing: Robot Framework, Puppeteer",
+    "intent": "provide_skill_automation",
+    "entities": [
+      {
+        "entity": "automation_tool",
+        "value": "Robot Framework",
+        "start": 18,
+        "end": 34
+      },
+      {
+        "entity": "automation_tool",
+        "value": "Puppeteer",
+        "start": 36,
+        "end": 45
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Tools: Git, Postman",
+    "intent": "provide_tools",
+    "entities": [
+      { "entity": "tool", "value": "Git", "start": 7, "end": 10 },
+      { "entity": "tool", "value": "Postman", "start": 12, "end": 18 }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "Additional Knowledge: Basic Networking",
+    "intent": "provide_additional_knowledge",
+    "entities": [
+      {
+        "entity": "knowledge",
+        "value": "Basic Networking",
+        "start": 22,
+        "end": 39
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "I have experience in designing system architectures, managing databases, and developing efficient solutions tailored to meet specific requirements.",
+    "intent": "provide_experience",
+    "entities": [
+      {
+        "entity": "experience",
+        "value": "designing system architectures",
+        "start": 17,
+        "end": 46
+      },
+      {
+        "entity": "experience",
+        "value": "managing databases",
+        "start": 48,
+        "end": 67
+      },
+      {
+        "entity": "experience",
+        "value": "developing efficient solutions tailored to meet specific requirements",
+        "start": 73,
+        "end": 139
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "I’m committed to delivering high-quality IT solutions to support and drive your business success.",
+    "intent": "provide_commitment",
+    "entities": [
+      {
+        "entity": "commitment",
+        "value": "delivering high-quality IT solutions to support and drive your business success",
+        "start": 16,
+        "end": 101
+      }
+    ],
+    "language": "en"
+  },
+  {
+    "text": "You can visit my personal website at pranon.netlify.app",
+    "intent": "provide_website",
+    "entities": [
+      {
+        "entity": "website_url",
+        "value": "pranon.netlify.app"
+      }
+    ],
+    "language": "en"
+  }
+]
