@@ -93,7 +93,10 @@ async function call_ai(messageText) {
   }
 
   const data = await res.json();
-  return data;
+  const rawText =
+    data.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
+  const cleanText = rawText.replace(/[\n"]/g, "");
+  return cleanText;
 }
 
 async function replyWithAIResponse(client, replyToken, messageText) {
