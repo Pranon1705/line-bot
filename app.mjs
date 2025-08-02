@@ -6,12 +6,11 @@ import {
   Client,
 } from "@line/bot-sdk";
 import fetch from "node-fetch";
-
+require("dotenv").config();
 const app = express();
 const config = {
-  channelSecret: "96db582e9e00643f751a1ed334de65d7",
-  channelAccessToken:
-    "h2qOq81qCmNps7Smh8j8tFmmEcL8KHiO0/I9YE2z+xZ7x0dRHd5s3LtGWh5qrC4htMygECngFk1A09rWuKiTWzc/OcuwlKXox/w+SI69zrbqLPVBbKdV0n3xIoIru096AMyA+9uMcCz8jTYsYQ+c+wdB04t89/1O/w1cDnyilFU=",
+  channelSecret: process.env.CHANNEL_SECRET,
+  channelAccessToken: process.env.CHANEL_ACCESS_TOKEN,
 };
 const client = new Client(config);
 
@@ -65,7 +64,7 @@ app.use((err, req, res, next) => {
 });
 
 async function call_ai(messageText) {
-  const apiKey = "AIzaSyB_rdY1ituk6r7fqf3Bd8sQMxIVygDHOqI";
+  const apiKey = process.env.GEMINI_KEY;
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
   const body = {
